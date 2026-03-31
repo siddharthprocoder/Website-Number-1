@@ -1,15 +1,65 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4f8fb;
+    background: linear-gradient(180deg, #eaf4ff 0%, #f4f8fb 35%, #d7e7f5 100%);
     color: #1f2933;
 }
 
 .hero {
-    text-align: center;
-    background: #2d6a4f;
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
     padding: 40px 20px;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.4), transparent 40%),
+                linear-gradient(135deg, #3b82f6 0%, #2d6a4f 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    opacity: 0.12;
+    filter: blur(6px);
+    pointer-events: none;
+}
+
+.hero-card {
+    position: relative;
+    max-width: 840px;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.18);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    color: #ffffff;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 32px 90px rgba(15, 23, 42, 0.25);
+    border-color: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.28);
+}
+
+.hero-card h1 {
+    margin: 0 0 16px;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1.05;
+}
+
+.hero-card p {
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.92);
 }
 
 .animal-container {
