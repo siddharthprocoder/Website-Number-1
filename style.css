@@ -9,8 +9,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    padding: 0 20px 24px;
+    min-height: 70vh;
+    padding: 110px 20px 28px;
     background: linear-gradient(180deg, rgba(15, 23, 42, 0.65), rgba(37, 99, 235, 0.25)),
                 url('animals meow.jpg') center/cover no-repeat;
     position: relative;
@@ -29,20 +29,20 @@ body {
 
 .top-nav {
     position: absolute;
-    top: 20px;
+    top: 22px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: min(100%, 980px);
-    gap: 14px;
-    padding: 10px 18px;
+    width: min(95%, 860px);
+    gap: 10px;
+    padding: 10px 16px;
     border-radius: 999px;
-    background: rgba(15, 23, 42, 0.45);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
-    z-index: 2;
+    background: rgba(15, 23, 42, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
 .top-nav-links {
@@ -56,21 +56,21 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 16px;
+    padding: 8px 14px;
     border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.08);
     color: #f8fafc;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease;
 }
 
 .top-nav-item:hover {
     transform: translateY(-2px);
-    background: rgba(255, 255, 255, 0.14);
-    border-color: rgba(255, 255, 255, 0.32);
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .top-nav-primary {
@@ -78,12 +78,12 @@ body {
 }
 
 .nav-menu {
-    min-width: 95px;
-    background: rgba(255, 255, 255, 0.14);
+    min-width: 90px;
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .nav-menu:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.18);
 }
 
 .hero-card {
@@ -92,11 +92,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 760px;
-    width: min(95%, 760px);
+    max-width: 1040px;
+    width: min(95%, 1040px);
     min-height: 420px;
-    margin-top: 40px;
-    padding: 42px 32px;
+    margin-top: 0;
+    padding: 46px 44px 42px;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.16);
@@ -132,18 +132,27 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 30px 20px;
+    padding: 20px 20px 40px;
 }
 
 .animal-card {
     background: white;
-    width: 280px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: min(280px, 100%);
+    max-width: 280px;
+    flex: 1 1 260px;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    color: #111111;
 }
 
 .animal-card h2 {
     margin-top: 0;
-    color: #2d6a4f;
+    color: #111111;
+}
+
+.animal-card p,
+.animal-card strong,
+.animal-card li {
+    color: #111111;
 }
