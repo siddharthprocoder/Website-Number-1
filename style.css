@@ -1,4 +1,4 @@
-* {
+﻿* {
     box-sizing: border-box;
 }
 
@@ -17,22 +17,16 @@ main {
 }
 
 .hero {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
-    min-height: 88vh;
-    padding: 0 20px 24px;
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.72), rgba(30, 64, 175, 0.28)),
-=======
     min-height: 70vh;
-    padding: 110px 20px 28px;
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.65), rgba(37, 99, 235, 0.25)),
->>>>>>> 55d1baeb529ee19da83d72e31e3f74bcbc746280
+    padding: 120px 20px 36px;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.34)),
                 url('animals meow.jpg') center/cover no-repeat;
-    position: relative;
-    overflow: hidden;
     text-align: center;
+    overflow: hidden;
 }
 
 .hero::before {
@@ -40,7 +34,7 @@ main {
     position: absolute;
     inset: 0;
     background: radial-gradient(circle at top, rgba(96, 165, 250, 0.24), transparent 35%),
-                linear-gradient(180deg, rgba(138, 150, 177, 0.28), rgba(15, 23, 42, 0.7));
+                linear-gradient(180deg, rgba(15, 23, 42, 0.28), rgba(15, 23, 42, 0.7));
     pointer-events: none;
 }
 
@@ -52,63 +46,42 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: min(95%, 860px);
-    gap: 10px;
-    padding: 10px 16px;
+    width: min(95%, 980px);
+    gap: 14px;
+    padding: 10px 18px;
     border-radius: 999px;
-<<<<<<< HEAD
-    background: rgba(15, 23, 42, 0.48);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.2);
-    z-index: 2;
-=======
-    background: rgba(15, 23, 42, 0.55);
+    background: rgba(15, 23, 42, 0.58);
     border: 1px solid rgba(255, 255, 255, 0.16);
-    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
-    z-index: 10;
->>>>>>> 55d1baeb529ee19da83d72e31e3f74bcbc746280
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+    z-index: 2;
 }
 
 .top-nav-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
     gap: 10px;
+    justify-content: flex-end;
 }
 
 .top-nav-item {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 14px;
+    padding: 10px 16px;
     border-radius: 999px;
-<<<<<<< HEAD
-    border: 1px solid rgba(255, 255, 255, 0.18);
-=======
     border: 1px solid rgba(255, 255, 255, 0.16);
->>>>>>> 55d1baeb529ee19da83d72e31e3f74bcbc746280
     background: rgba(255, 255, 255, 0.08);
     color: #f8fafc;
     text-decoration: none;
     font-weight: 600;
-<<<<<<< HEAD
     font-size: 0.95rem;
-    cursor: pointer;
-=======
-    font-size: 0.9rem;
->>>>>>> 55d1baeb529ee19da83d72e31e3f74bcbc746280
     transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease;
 }
 
 .top-nav-item:hover {
     transform: translateY(-2px);
-<<<<<<< HEAD
     background: rgba(255, 255, 255, 0.16);
-    border-color: rgba(255, 255, 255, 0.32);
-=======
-    background: rgba(255, 255, 255, 0.18);
     border-color: rgba(255, 255, 255, 0.3);
->>>>>>> 55d1baeb529ee19da83d72e31e3f74bcbc746280
 }
 
 .top-nav-primary {
@@ -116,16 +89,12 @@ main {
 }
 
 .nav-menu {
-<<<<<<< HEAD
     min-width: 95px;
-=======
-    min-width: 90px;
     background: rgba(255, 255, 255, 0.12);
 }
 
 .nav-menu:hover {
     background: rgba(255, 255, 255, 0.18);
->>>>>>> 55d1baeb529ee19da83d72e31e3f74bcbc746280
 }
 
 .hero-card {
@@ -137,54 +106,42 @@ main {
     max-width: 1040px;
     width: min(95%, 1040px);
     min-height: 420px;
-<<<<<<< HEAD
-    margin-top: 40px;
-    padding: 42px 32px;
-    border-radius: 24px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.22);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-=======
     margin-top: 0;
     padding: 46px 44px 42px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.16);
-    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.14);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
->>>>>>> 55d1baeb529ee19da83d72e31e3f74bcbc746280
+    box-shadow: 0 14px 36px rgba(15, 23, 42, 0.16);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     color: #ffffff;
     transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease, background 0.35s ease;
     z-index: 1;
 }
 
 .hero-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.28);
+    transform: translateY(-2px);
+    box-shadow: 0 22px 56px rgba(15, 23, 42, 0.22);
     border-color: rgba(255, 255, 255, 0.4);
     background: rgba(255, 255, 255, 0.18);
 }
 
 .hero-card h1 {
-    margin: 0 0 12px;
-    font-size: clamp(2rem, 3vw, 2.9rem);
-    line-height: 1.08;
-    letter-spacing: 0.3px;
+    margin: 0 0 18px;
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.05;
+    letter-spacing: 0.4px;
 }
 
 .hero-card p {
     margin: 0;
-    max-width: 620px;
+    max-width: 680px;
     font-size: 1.05rem;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.94);
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .animal-container {
-<<<<<<< HEAD
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 22px;
@@ -237,6 +194,7 @@ main {
         padding: 10px 12px;
         border-radius: 20px;
         flex-direction: column;
+        align-items: center;
     }
 
     .top-nav-links {
@@ -245,7 +203,7 @@ main {
 
     .hero {
         min-height: auto;
-        padding-top: 110px;
+        padding-top: 120px;
         padding-bottom: 28px;
     }
 
@@ -257,33 +215,4 @@ main {
     main {
         width: min(100%, calc(100% - 16px));
     }
-=======
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px 20px 40px;
-}
-
-.animal-card {
-    background: white;
-    width: min(280px, 100%);
-    max-width: 280px;
-    flex: 1 1 260px;
-    padding: 24px;
-    border-radius: 16px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    color: #111111;
-}
-
-.animal-card h2 {
-    margin-top: 0;
-    color: #111111;
-}
-
-.animal-card p,
-.animal-card strong,
-.animal-card li {
-    color: #111111;
->>>>>>> 55d1baeb529ee19da83d72e31e3f74bcbc746280
 }
